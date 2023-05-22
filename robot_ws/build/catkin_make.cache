@@ -1,2 +1,2 @@
-
+control
 -DCATKIN_DEVEL_PREFIX=/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/rafly/Desktop/TUBES-Dagoz/robot_ws/install -G Unix Makefiles
