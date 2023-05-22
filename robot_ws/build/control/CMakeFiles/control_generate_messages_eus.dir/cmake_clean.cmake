@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/share/roseus/ros/control/manifest.l"
-  "/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/share/roseus/ros/control/msg/motor.l"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/share/roseus/ros/control/manifest.l"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/share/roseus/ros/control/msg/keyboardinput.l"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/share/roseus/ros/control/msg/motor.l"
   "CMakeFiles/control_generate_messages_eus"
 )
 

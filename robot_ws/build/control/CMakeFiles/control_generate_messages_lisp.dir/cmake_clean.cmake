@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/share/common-lisp/ros/control/msg/motor.lisp"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/share/common-lisp/ros/control/msg/keyboardinput.lisp"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/share/common-lisp/ros/control/msg/motor.lisp"
   "CMakeFiles/control_generate_messages_lisp"
 )
 

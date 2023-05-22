@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src
+CMAKE_SOURCE_DIR = /home/uliviaembun/TUBES-Dagoz/robot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build
+CMAKE_BINARY_DIR = /home/uliviaembun/TUBES-Dagoz/robot_ws/build
 
 # Utility rule file for roscpp_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build: roscpp_generate_me
 .PHONY : control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 
 control/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	cd /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/control && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/uliviaembun/TUBES-Dagoz/robot_ws/build/control && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : control/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 control/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend:
-	cd /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/control /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/control/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/uliviaembun/TUBES-Dagoz/robot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uliviaembun/TUBES-Dagoz/robot_ws/src /home/uliviaembun/TUBES-Dagoz/robot_ws/src/control /home/uliviaembun/TUBES-Dagoz/robot_ws/build /home/uliviaembun/TUBES-Dagoz/robot_ws/build/control /home/uliviaembun/TUBES-Dagoz/robot_ws/build/control/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : control/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 

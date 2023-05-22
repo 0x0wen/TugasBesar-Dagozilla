@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/share/gennodejs/ros/control/msg/motor.js"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/share/gennodejs/ros/control/msg/keyboardinput.js"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/share/gennodejs/ros/control/msg/motor.js"
   "CMakeFiles/control_generate_messages_nodejs"
 )
 

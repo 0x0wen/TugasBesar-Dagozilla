@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src
+CMAKE_SOURCE_DIR = /home/uliviaembun/TUBES-Dagoz/robot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build
+CMAKE_BINARY_DIR = /home/uliviaembun/TUBES-Dagoz/robot_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build: rosgraph_msgs_g
 .PHONY : control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/control && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/uliviaembun/TUBES-Dagoz/robot_ws/build/control && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/control /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/uliviaembun/TUBES-Dagoz/robot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uliviaembun/TUBES-Dagoz/robot_ws/src /home/uliviaembun/TUBES-Dagoz/robot_ws/src/control /home/uliviaembun/TUBES-Dagoz/robot_ws/build /home/uliviaembun/TUBES-Dagoz/robot_ws/build/control /home/uliviaembun/TUBES-Dagoz/robot_ws/build/control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

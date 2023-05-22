@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"control\"
 
-CXX_INCLUDES = -I/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/include -I/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control/$(catkin_INCLUDE_DIRS) -I/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/include -I/home/uliviaembun/TUBES-Dagoz/robot_ws/src/control/$(catkin_INCLUDE_DIRS) -I/home/uliviaembun/TUBES-Dagoz/robot_ws/src/control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

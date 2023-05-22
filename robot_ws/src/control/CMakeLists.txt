@@ -52,6 +52,7 @@ include_directories($(catkin_INCLUDE_DIRS))
 add_message_files(
   FILES
   motor.msg
+  keyboardinput.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -135,7 +136,9 @@ ${catkin_INCLUDE_DIRS}
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(control_node src/control_node.cpp)
+add_executable(keyboard_input_node src/keyboard_input_node.cpp)
 add_executable(testpub_node src/testpub_node.cpp)
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -146,11 +149,16 @@ add_executable(testpub_node src/testpub_node.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 add_dependencies(control_node ${control_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(keyboard_input_node ${keyboard_input_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(testpub_node ${testpub_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(control_node
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(keyboard_input_node 
   ${catkin_LIBRARIES}
 )
 
