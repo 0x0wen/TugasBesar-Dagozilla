@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/lib/control/control_node"
-  "/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/lib/control/control_node.pdb"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/lib/control/control_node"
+  "/home/uliviaembun/TUBES-Dagoz/robot_ws/devel/lib/control/control_node.pdb"
   "CMakeFiles/control_node.dir/src/control_node.cpp.o"
 )
 

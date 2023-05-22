@@ -1,4 +1,4 @@
-prefix=/home/rafly/Desktop/TUBES-Dagoz/robot_ws/install
+prefix=/home/uliviaembun/TUBES-Dagoz/robot_ws/install
 
 Name: control
 Description: Description of control

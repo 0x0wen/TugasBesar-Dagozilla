@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src
+CMAKE_SOURCE_DIR = /home/uliviaembun/TUBES-Dagoz/robot_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build
+CMAKE_BINARY_DIR = /home/uliviaembun/TUBES-Dagoz/robot_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/CMakeFiles /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/uliviaembun/TUBES-Dagoz/robot_ws/build/CMakeFiles /home/uliviaembun/TUBES-Dagoz/robot_ws/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/uliviaembun/TUBES-Dagoz/robot_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -283,6 +283,32 @@ gtest: cmake_check_build_system
 gtest/fast:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named testpub_node
+
+# Build rule for target.
+testpub_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testpub_node
+.PHONY : testpub_node
+
+# fast build rule for target.
+testpub_node/fast:
+	$(MAKE) -f control/CMakeFiles/testpub_node.dir/build.make control/CMakeFiles/testpub_node.dir/build
+.PHONY : testpub_node/fast
+
+#=============================================================================
+# Target rules for targets named keyboard_input_node
+
+# Build rule for target.
+keyboard_input_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 keyboard_input_node
+.PHONY : keyboard_input_node
+
+# fast build rule for target.
+keyboard_input_node/fast:
+	$(MAKE) -f control/CMakeFiles/keyboard_input_node.dir/build.make control/CMakeFiles/keyboard_input_node.dir/build
+.PHONY : keyboard_input_node/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_py
@@ -571,6 +597,19 @@ control_generate_messages/fast:
 .PHONY : control_generate_messages/fast
 
 #=============================================================================
+# Target rules for targets named _control_generate_messages_check_deps_keyboardinput
+
+# Build rule for target.
+_control_generate_messages_check_deps_keyboardinput: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _control_generate_messages_check_deps_keyboardinput
+.PHONY : _control_generate_messages_check_deps_keyboardinput
+
+# fast build rule for target.
+_control_generate_messages_check_deps_keyboardinput/fast:
+	$(MAKE) -f control/CMakeFiles/_control_generate_messages_check_deps_keyboardinput.dir/build.make control/CMakeFiles/_control_generate_messages_check_deps_keyboardinput.dir/build
+.PHONY : _control_generate_messages_check_deps_keyboardinput/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -648,19 +687,6 @@ control_generate_messages_py/fast:
 	$(MAKE) -f control/CMakeFiles/control_generate_messages_py.dir/build.make control/CMakeFiles/control_generate_messages_py.dir/build
 .PHONY : control_generate_messages_py/fast
 
-#=============================================================================
-# Target rules for targets named testpub_node
-
-# Build rule for target.
-testpub_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testpub_node
-.PHONY : testpub_node
-
-# fast build rule for target.
-testpub_node/fast:
-	$(MAKE) -f control/CMakeFiles/testpub_node.dir/build.make control/CMakeFiles/testpub_node.dir/build
-.PHONY : testpub_node/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -683,6 +709,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... testpub_node"
+	@echo "... keyboard_input_node"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
@@ -705,13 +733,13 @@ help:
 	@echo "... control_node"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... control_generate_messages"
+	@echo "... _control_generate_messages_check_deps_keyboardinput"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... control_genlisp"
 	@echo "... control_geneus"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... control_generate_messages_lisp"
 	@echo "... control_generate_messages_py"
-	@echo "... testpub_node"
 .PHONY : help
 
 

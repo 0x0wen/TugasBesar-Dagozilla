@@ -6,31 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/include/control/motor.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control/src/control_node.cpp
+/home/uliviaembun/TUBES-Dagoz/robot_ws/src/control/src/control_node.cpp
 ros/ros.h
-/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control/src/ros/ros.h
+/home/uliviaembun/TUBES-Dagoz/robot_ws/src/control/src/ros/ros.h
 std_msgs/String.h
-/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control/src/std_msgs/String.h
+/home/uliviaembun/TUBES-Dagoz/robot_ws/src/control/src/std_msgs/String.h
 string
-/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control/src/string
+/home/uliviaembun/TUBES-Dagoz/robot_ws/src/control/src/string
 control/motor.h
-/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src/control/src/control/motor.h
+/home/uliviaembun/TUBES-Dagoz/robot_ws/src/control/src/control/motor.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h
