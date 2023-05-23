@@ -1,6 +1,7 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include "string"
+#include "control/keyboardinput.h"
 #include "control/motor.h"
 
 
@@ -61,7 +62,7 @@ int main(int argc, char **argv){
     ros::Publisher pub = nh.advertise<control::motor>("PWM",10);
 
 
-    ros::Subscriber sub = nh.subscribe("topic",1000,callbackFunction);
+    ros::Subscriber sub = nh.subscribe("/keyboard_input",1000,callbackFunction);
 
 
 
