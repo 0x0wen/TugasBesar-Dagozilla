@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src
+CMAKE_SOURCE_DIR = "/home/firly/testing ros/branch msgs/nyobain_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build
+CMAKE_BINARY_DIR = "/home/firly/testing ros/branch msgs/nyobain_ws/build"
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/firly/testing\ ros/branch\ msgs/nyobain_ws/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/firly/testing ros/branch msgs/nyobain_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/firly/testing ros/branch msgs/nyobain_ws/src" "/home/firly/testing ros/branch msgs/nyobain_ws/src" "/home/firly/testing ros/branch msgs/nyobain_ws/build" "/home/firly/testing ros/branch msgs/nyobain_ws/build" "/home/firly/testing ros/branch msgs/nyobain_ws/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

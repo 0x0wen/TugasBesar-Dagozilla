@@ -1,0 +1,8 @@
+prefix=/home/firly/testing ros/branch msgs/nyobain_ws/install
+
+Name: Msgs
+Description: Description of Msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

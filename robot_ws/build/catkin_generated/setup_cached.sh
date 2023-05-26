@@ -7,7 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/rafly/Desktop/TUBES-Dagoz/robot_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/rafly/Desktop/TUBES-Dagoz/robot_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/rafly/Desktop/TUBES-Dagoz/robot_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/firly/testing ros/branch msgs/nyobain_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/firly/testing ros/branch msgs/nyobain_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/firly/testing ros/branch msgs/nyobain_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PYTHONPATH="/home/firly/testing ros/branch msgs/nyobain_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/firly/testing ros/branch msgs/nyobain_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/firly/testing ros/branch msgs/nyobain_ws/src:$ROS_PACKAGE_PATH"
