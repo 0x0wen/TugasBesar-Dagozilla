@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src
+CMAKE_SOURCE_DIR = "/home/firly/testing ros/branch msgs/nyobain_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build
+CMAKE_BINARY_DIR = "/home/firly/testing ros/branch msgs/nyobain_ws/build"
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src /home/rafly/Desktop/TUBES-Dagoz/robot_ws/src /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build /home/rafly/Desktop/TUBES-Dagoz/robot_ws/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/firly/testing ros/branch msgs/nyobain_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/firly/testing ros/branch msgs/nyobain_ws/src" "/home/firly/testing ros/branch msgs/nyobain_ws/src" "/home/firly/testing ros/branch msgs/nyobain_ws/build" "/home/firly/testing ros/branch msgs/nyobain_ws/build" "/home/firly/testing ros/branch msgs/nyobain_ws/build/CMakeFiles/tests.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 
