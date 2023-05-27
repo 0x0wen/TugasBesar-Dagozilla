@@ -1,0 +1,4 @@
+<launch>    
+    <node pkg="control" type="control_node.cpp" name = "control_node" output = "screen"></node>
+    <node pkg="control" type="keyboard_input_node.cpp" name = "keyboard_input_node" output = "screen"></node>
+</launch>
