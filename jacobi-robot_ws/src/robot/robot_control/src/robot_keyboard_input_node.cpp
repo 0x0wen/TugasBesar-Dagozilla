@@ -18,6 +18,9 @@ int main(int argc, char** argv)
       robot_msgs::KeyboardInput msg;
       msg.command = input;
       pub.publish(msg);
+
+      // Log the command using rosinfo
+      ROS_INFO("Command: %c",input);
     }
     else {
       std::cout << "Invalid command. Please try again.\n";
@@ -26,6 +29,9 @@ int main(int argc, char** argv)
     // Use ros::spinOnce() only when there are callbacks to process
     ros::spinOnce();
   }
+
+  // Log that the node is exiting using rosinfo
+  ROS_INFO("Robot keyboard input node is exiting.");
 
   return 0;
 }
