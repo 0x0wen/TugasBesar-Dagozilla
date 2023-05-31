@@ -1,0 +1,9 @@
+compute_period : 50
+frequency: 20
+
+move_forward: [-0.1, 0.1, -0.1, 0.1]
+move_backward: [0.1, -0.1, 0.1, -0.1]
+slide_left: [0.1, 0.1, -0.1, -0.1]
+slide_right: [-0.1, -0.1, 0.1, 0.1]
+rotate_clockwise: [-0.1, -0.1, -0.1, -0.1]
+rotate_counterclockwise: [0.1, 0.1, 0.1, 0.1]
