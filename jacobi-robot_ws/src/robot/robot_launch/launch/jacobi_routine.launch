@@ -1,0 +1,4 @@
+<launch>    
+    <node pkg="robot_control" type="robot_control_node" name = "control_node" output = "screen"></node>
+    <node pkg="robot_control" type="robot_keyboard_input_node" name = "keyboard_input_node" output = "screen"></node>
+</launch>
