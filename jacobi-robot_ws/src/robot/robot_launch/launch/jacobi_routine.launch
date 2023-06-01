@@ -1,4 +1,9 @@
-<launch>    
-    <node pkg="robot_control" type="robot_control_node" name = "control_node" output = "screen"></node>
+<launch>
+    <arg name="param_compute_period" default="50" />    
+    <node pkg="robot_control" type="robot_control_node" name = "control_node" output = "screen">
+        <!-- Add this line to pass the argument -->
+        <param name="compute_period" value="$(arg param_compute_period)" />
+    </node>
     <node pkg="robot_control" type="robot_keyboard_input_node" name = "keyboard_input_node" output = "screen"></node>
+    <!-- Add this line to define the argument -->
 </launch>
