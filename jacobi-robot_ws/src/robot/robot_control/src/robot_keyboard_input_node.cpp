@@ -6,11 +6,11 @@ int main(int argc, char** argv)
 {
   ros::init(argc, argv, "robot_keyboard_input_node");
   ros::NodeHandle nh;
-  ros::Publisher pub = nh.advertise<robot_msgs::KeyboardInput>("/robot_keyboard_input",1000);
+  ros::Publisher pub = nh.advertise<robot_msgs::KeyboardInput>("/robot_keyboard_input",1);
 
   char input;
   while (ros::ok()) {
-    std::cout << "Enter a command (W, A, S, D, R): ";
+    std::cout << "Enter a command (W, A, S, D, R): \n";
     std::cin >> input;
 
     // Check if the input is valid before publishing
