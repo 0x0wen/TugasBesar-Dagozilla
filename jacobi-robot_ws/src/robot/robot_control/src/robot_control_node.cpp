@@ -67,10 +67,17 @@ void callbackFunction(const robot_msgs::KeyboardInput::ConstPtr& msg){
         return; // Return without publishing
     }
 
-    // Publish the motor values and log them using rosinfo
-    pub.publish(value);
-    ROS_INFO("Motor values: %f %f %f %f",value.motor1,value.motor2,value.motor3,value.motor4);
+  ros::Time beginTime = ros::Time::now();
+  ros::Duration secondsIWantToSendMessageFor = ros::Duration(1);
+  ros::Time endTime = beginTime + secondsIWantToSendMessageFor;
 
+    // Publish the motor values and log them using rosinfo
+    while(ros::Time::now() < endTime){
+      pub.publish(value);
+      ROS_INFO("Motor values: %f %f %f %f",value.motor1,value.motor2,value.motor3,value.motor4);
+      ros::Duration(0.1).sleep();
+    }
+    
      // Wait for the duration of the command
     ros::Duration(DURATION).sleep();
 
