@@ -103,10 +103,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES robot_control
+INCLUDE_DIRS include
+# LIBRARIES robot_control
 CATKIN_DEPENDS roscpp std_msgs robot_msgs
-#  DEPENDS system_lib
+# DEPENDS system_lib
 )
 
 ###########
@@ -116,7 +116,7 @@ CATKIN_DEPENDS roscpp std_msgs robot_msgs
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -130,11 +130,18 @@ include_directories(
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
+add_library(libs
+  # src/robot_control_node.cpp
+  include/libs/keyboard_teleop.cpp
+  include/libs/keyboard_teleop.hpp
+)
+
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(robot_control_node src/robot_control_node.cpp)
 add_executable(robot_keyboard_input_node src/robot_keyboard_input_node.cpp)
+# add_executable(keyboard_teleop src/keyboard_teleop.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -145,15 +152,19 @@ add_executable(robot_keyboard_input_node src/robot_keyboard_input_node.cpp)
 ## same as for the library above
 add_dependencies(robot_control_node ${robot_control_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(robot_keyboard_input_node ${robot_keyboard_input_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# add_dependencies(keyboard_teleop ${robot_control_node_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(robot_control_node
-   ${catkin_LIBRARIES}
- )
+  libs
+  ${catkin_LIBRARIES}
+)
 
- target_link_libraries(robot_keyboard_input_node
-   ${catkin_LIBRARIES}
- )
+target_link_libraries(robot_keyboard_input_node
+  libs
+  ${catkin_LIBRARIES}
+)
+
 #############
 ## Install ##
 #############
