@@ -1,0 +1,5 @@
+<launch>    
+    <node pkg="control" type="robot_control_node" name = "control_node" output = "screen"></node>
+    <node pkg="control" type="robot_keyboard_input_node" name = "keyboard_input_node" output = "screen"></node>
+    <rosparam file="$(find control)/config/robot_control.yaml" />
+</launch>

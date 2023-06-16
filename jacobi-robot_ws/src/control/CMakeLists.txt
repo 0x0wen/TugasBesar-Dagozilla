@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(robot_control)
+project(control)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -47,11 +47,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+add_message_files(
+  FILES
+  HardwareCommand.msg
+  EncoderData.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -68,10 +68,10 @@ find_package(catkin REQUIRED COMPONENTS
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs
-# )
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -103,9 +103,9 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-INCLUDE_DIRS include
+# INCLUDE_DIRS include
 # LIBRARIES robot_control
-CATKIN_DEPENDS roscpp std_msgs robot_msgs
+# CATKIN_DEPENDS roscpp std_msgs robot_msgs
 # DEPENDS system_lib
 )
 
@@ -130,10 +130,10 @@ include_directories(
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
-add_library(libs
-  # src/robot_control_node.cpp
-  include/libs/keyboard_teleop.cpp
-  include/libs/keyboard_teleop.hpp
+add_library(include
+  src/robot_control_node.cpp
+  include/keyboard_teleop.cpp
+  include/keyboard_teleop.hpp
 )
 
 ## Declare a C++ executable
@@ -156,12 +156,12 @@ add_dependencies(robot_keyboard_input_node ${robot_keyboard_input_node_EXPORTED_
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(robot_control_node
-  libs
+  include
   ${catkin_LIBRARIES}
 )
 
 target_link_libraries(robot_keyboard_input_node
-  libs
+  include
   ${catkin_LIBRARIES}
 )
 

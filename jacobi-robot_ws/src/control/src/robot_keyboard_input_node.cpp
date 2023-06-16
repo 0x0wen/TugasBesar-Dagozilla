@@ -3,7 +3,7 @@
 #include <boost/thread/thread.hpp>
 #include "ros/ros.h"
 #include "robot_msgs/KeyboardInput.h"
-#include "../include/libs/keyboard_teleop.hpp"
+#include "keyboard_teleop.hpp"
 
 int main(int argc, char** argv)
 {
