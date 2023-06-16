@@ -3,9 +3,5 @@
   frequency: 20
 
 /movements:
-  move_forward: {motor1: -0.1, motor2: 0.1, motor3: -0.1, motor4: 0.1}
-  move_backward: {motor1: 0.1, motor2: -0.1, motor3: 0.1, motor4: -0.1}
-  slide_left: {motor1: 0.1, motor2: 0.1, motor3: -0.1, motor4: -0.1}
-  slide_right: {motor1: -0.1, motor2: -0.1, motor3: 0.1, motor4: 0.1}
-  rotate_clockwise: {motor1: -0.1, motor2: -0.1, motor3: -0.1, motor4: -0.1}
-  rotate_counterclockwise: {motor1: 0.1, motor2: 0.1, motor3: 0.1, motor4: 0.1}
+  pwm: 0.1
+

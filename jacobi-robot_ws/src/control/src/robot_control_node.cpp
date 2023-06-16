@@ -1,5 +1,6 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
+#include "std_msgs/Float32.h"
 #include "string"
 #include "robot_msgs/KeyboardInput.h"
 #include "robot_msgs/HardwareCommand.h"
@@ -15,40 +16,45 @@ void callbackFunction(const robot_msgs::KeyboardInput::ConstPtr& msg){
 
     robot_msgs::HardwareCommand value;
 
+    float pwm;
+    float DEFAULT = 0.0;
+
+    nh.param("/movements/pwm", pwm, DEFAULT);
+
     // Set the motor speeds based on the input
     if (input == "W"){
-        nh.param("/movements/move_forward/motor1", value.motor1, float(0.0));
-        nh.param("/movements/move_forward/motor2", value.motor2, float(0.0));
-        nh.param("/movements/move_forward/motor3", value.motor3, float(0.0));
-        nh.param("/movements/move_forward/motor4", value.motor4, float(0.0));
+        value.motor1 = -pwm;
+        value.motor2 = pwm;
+        value.motor3 = -pwm;
+        value.motor4 = pwm;
         dirty = true;
     }
     else if (input == "A"){
-        nh.param("/movements/slide_left/motor1", value.motor1, float(0.0));
-        nh.param("/movements/slide_left/motor2", value.motor2, float(0.0));
-        nh.param("/movements/slide_left/motor3", value.motor3, float(0.0));
-        nh.param("/movements/slide_left/motor4", value.motor4, float(0.0));
+        value.motor1 = pwm;
+        value.motor2 = pwm;
+        value.motor3 = -pwm;
+        value.motor4 = -pwm;
         dirty = true;
     }
     else if (input == "S"){
-        nh.param("/movements/move_backward/motor1", value.motor1, float(0.0));
-        nh.param("/movements/move_backward/motor2", value.motor2, float(0.0));
-        nh.param("/movements/move_backward/motor3", value.motor3, float(0.0));
-        nh.param("/movements/move_backward/motor4", value.motor4, float(0.0));
+        value.motor1 = pwm;
+        value.motor2 = -pwm;
+        value.motor3 = pwm;
+        value.motor4 = -pwm;
         dirty = true;
     }
     else if (input == "D"){
-        nh.param("/movements/slide_right/motor1", value.motor1, float(0.0));
-        nh.param("/movements/slide_right/motor2", value.motor2, float(0.0));
-        nh.param("/movements/slide_right/motor3", value.motor3, float(0.0));
-        nh.param("/movements/slide_right/motor4", value.motor4, float(0.0));
+        value.motor1 = -pwm;
+        value.motor2 = -pwm;
+        value.motor3 = pwm;
+        value.motor4 = pwm;
         dirty = true;
     }
     else if (input == "R"){
-        nh.param("/movements/rotate_clockwise/motor1", value.motor1, float(0.0));
-        nh.param("/movements/rotate_clockwise/motor2", value.motor2, float(0.0));
-        nh.param("/movements/rotate_clockwise/motor3", value.motor3, float(0.0));
-        nh.param("/movements/rotate_clockwise/motor4", value.motor4, float(0.0));
+        value.motor1 = -pwm;
+        value.motor2 = -pwm;
+        value.motor3 = -pwm;
+        value.motor4 = -pwm;
         dirty = true;
     }
     else {
