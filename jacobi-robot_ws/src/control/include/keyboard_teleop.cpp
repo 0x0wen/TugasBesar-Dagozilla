@@ -15,11 +15,13 @@
 #define KEYCODE_A 0x61
 #define KEYCODE_S 0x73
 #define KEYCODE_D 0x64
+#define KEYCODE_R 0x52
 
 #define KEYCODE_A_CAP 0x41
 #define KEYCODE_D_CAP 0x44
 #define KEYCODE_S_CAP 0x53
 #define KEYCODE_W_CAP 0x57
+#define KEYCODE_R_CAP 0x72
 
 KeyboardTeleop::KeyboardTeleop()
 {
@@ -99,7 +101,11 @@ KeyboardTeleop::keyboardLoop()
                 msg.command = "D";
                 dirty = true;
                 break;
-                
+            case KEYCODE_R:
+                msg.command = "R";
+                dirty = true;
+                break;
+
             case KEYCODE_W_CAP:
                 msg.command = "W";
                 dirty = true;
@@ -116,7 +122,11 @@ KeyboardTeleop::keyboardLoop()
                 msg.command = "D";
                 dirty = true;
                 break;
-                
+            case KEYCODE_R_CAP:
+                msg.command = "R";
+                dirty = true;
+                break;
+
             default:
                 msg.command = "Invalid Input";
                 dirty = true;

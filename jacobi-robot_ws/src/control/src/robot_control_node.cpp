@@ -30,10 +30,10 @@ void callbackFunction(const robot_msgs::KeyboardInput::ConstPtr& msg){
         dirty = true;
     }
     else if (input == "A"){
-        value.motor1 = pwm;
-        value.motor2 = pwm;
-        value.motor3 = -pwm;
-        value.motor4 = -pwm;
+        value.motor1 = -pwm;
+        value.motor2 = -pwm;
+        value.motor3 = pwm;
+        value.motor4 = pwm;
         dirty = true;
     }
     else if (input == "S"){
@@ -44,10 +44,10 @@ void callbackFunction(const robot_msgs::KeyboardInput::ConstPtr& msg){
         dirty = true;
     }
     else if (input == "D"){
-        value.motor1 = -pwm;
-        value.motor2 = -pwm;
-        value.motor3 = pwm;
-        value.motor4 = pwm;
+        value.motor1 = pwm;
+        value.motor2 = pwm;
+        value.motor3 = -pwm;
+        value.motor4 = -pwm;
         dirty = true;
     }
     else if (input == "R"){
